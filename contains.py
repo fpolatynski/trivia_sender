@@ -1,5 +1,4 @@
-adresses = {'Nikola':"nikstaskiewicz@gmail.com", 'Mama':"jagodapo@gmail.com", 'Grzegorz':"rzegorzcsr@gmail.com"}
-print(adresses)
+adresses = {'Nikola':"nikstaskiewicz@gmail.com", 'Mama':"jagodapo@gmail.com", 'Grzegorz': "rzegorzcsr@gmail.com", 'Daniel': "WINNER.STAR.555@gmail.com"}
 
 email_trivia_contents = [["""\
 The Eiffel Tower can be 15 cm taller during the summer""", """
@@ -50,4 +49,3 @@ Catalonia isn't the only catalan place""", """
 </body>
 </html>
 """, 'images/andora.png']]
-print(email_trivia_contents)
