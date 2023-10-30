@@ -8,7 +8,7 @@ from email.mime.image import MIMEImage
 
 
 # Sends HTML gmails
-def send_trivia(sender_email, receiver_email, password, text, html, photo):
+def send_trivia(sender_email, receiver_email, password, content):
     port = 465
 
 
@@ -18,7 +18,7 @@ def send_trivia(sender_email, receiver_email, password, text, html, photo):
     message["From"] = sender_email
     message["To"] = receiver_email
 
-    fp = open(photo, 'rb')
+    fp = open(content[2], 'rb')
     msgImage = MIMEImage(fp.read())
     fp.close()
 
@@ -26,8 +26,8 @@ def send_trivia(sender_email, receiver_email, password, text, html, photo):
     message.attach(msgImage)
 
     # Turn these into plain/html MIMEText objects
-    part1 = MIMEText(text, "plain")
-    part2 = MIMEText(html, "html")
+    part1 = MIMEText(content[0], "plain")
+    part2 = MIMEText(content[1], "html")
 
     message.attach(part1)
     message.attach(part2)
