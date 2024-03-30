@@ -2,10 +2,6 @@ import smtplib, ssl
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.mime.image import MIMEImage
-#hasło cieszsieciekawostkami
-#hasło "lugx tshs vzly hmvo"
-
-
 
 # Sends HTML gmails
 def send_trivia(sender_email, receiver_email, password, content):
