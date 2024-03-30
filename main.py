@@ -1,5 +1,8 @@
 import include
 import contains
+import adresses
 
-
-include.send_trivia("enjoy.daily.trivia@gmail.com", "fpolatynski@gmail.com", "lugx tshs vzly hmvo", contains.email_trivia_contents[1])
+send_to =['Send_to_1', 'Send_to_2']
+for reciver in send_to:
+    include.send_trivia(adresses.gmail, adresses.adresses[reciver], adresses.password, contains.email_trivia_contents[1])
+    
